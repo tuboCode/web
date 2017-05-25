@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8"%>
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -21,11 +21,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  <h1>使用servlet路径跳转</h1><br>
-  <!-- 使用相对路径访问servlet -->
-  <a href="servlet/hello"> 访问helloservlet</a> <br>
-  <!-- 使用绝对路径访问servlet -->
-  <a href="<%=path%>/servlet/hello">访问helloservlet</a><br>
-  <a href="servlet/test">访问testservlet,跳转到test.jsp</a><br>
+    <h1>获取初始化参数演示案例</h1>
+    <hr>
+    <a href="servlet/GetInitParameterServlet">获取初始化参数Servlet</a>
   </body>
 </html>
